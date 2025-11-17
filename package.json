@@ -8,16 +8,24 @@
     "start": "next start"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.0",
+    "@types/three": "^0.181.0",
+    "fslightbox-react": "^2.0.0",
+    "lightbox.js-react": "^1.6.4",
+    "next": "15.5.4",
+    "random-words": "^2.0.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "three": "^0.180.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "sass": "^1.94.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
