@@ -7,44 +7,53 @@ import Button from "./components/Button";
 import Grid from "./components/Grid";
 import List from "./components/List";
 import Cta from "./components/Cta";
-import App from "./components/WordCloud";
+// import App from "./components/WordCloud";
 import Other from "./components/Other";
 import { projects } from './data/projectData'
 
-const gridImages = {
-  leftImages: [
-    {
-      url: projects[0].images[0].src,
-      alt: projects[0].images[0].alt,
-      title: projects[0].title,
-      description: projects[0].tagLine,
-      slug: projects[0].id
-    },
-    {
-      url: projects[1].images[0].src,
-      alt: projects[1].images[0].alt,
-      title: projects[1].title,
-      description: projects[1].tagLine,
-      slug: projects[1].id
-    }
-  ],
-  rightImages: [
-    {
-      url: projects[2]?.images[0]?.src || '/placeholder.jpg',
-      alt: projects[2]?.images[0]?.alt || 'Project preview',
-      title: projects[2]?.title || 'Coming soon',
-      description: projects[2]?.tagLine || 'Project in development',
-      slug: projects[2]?.id || ''
-    },
-    {
-      url: projects[3]?.images[0]?.src || '/placeholder.jpg',
-      alt: projects[3]?.images[0]?.alt || 'Project preview',
-      title: projects[3]?.title || 'Coming soon',
-      description: projects[3]?.tagLine || 'Project in development',
-      slug: projects[3]?.id || ''
-    }
-  ]
+type GridImage = {
+    url: string;
+    alt: string;
+    title: string;
+    description: string;
+    slug?: string;
+    canHover?: boolean;
 };
+
+const gridImages = {
+    leftImages: [
+        {
+            url: projects[0].images[0].src,
+            alt: projects[0].images[0].alt,
+            title: projects[0].title,
+            description: projects[0].tagLine,
+            slug: projects[0].id
+        } as GridImage,
+        {
+            url: projects[1].images[0].src,
+            alt: projects[1].images[0].alt,
+            title: projects[1].title,
+            description: projects[1].tagLine,
+            slug: projects[1].id
+        } as GridImage
+    ],
+    rightImages: [
+        {
+            url: projects[2]?.images[0]?.src || '/placeholder.jpg',
+            alt: projects[2]?.images[0]?.alt || 'Project preview',
+            title: projects[2]?.title || 'Coming soon',
+            description: projects[2]?.tagLine || 'Project in development',
+            slug: projects[2]?.id || ''
+        } as GridImage,
+        {
+            url: projects[3]?.images[0]?.src || '/placeholder.jpg',
+            alt: projects[3]?.images[0]?.alt || 'Project preview',
+            title: projects[3]?.title || 'Coming soon',
+            description: projects[3]?.tagLine || 'Project in development',
+            slug: projects[3]?.id || ''
+        } as GridImage,
+    ],
+} as { leftImages: [GridImage, GridImage], rightImages: [GridImage, GridImage] };
 
 
 export default function Home() {
@@ -59,14 +68,14 @@ export default function Home() {
     { text: 'Frontend', value: 40 },
     { text: 'Framework', value: 35 }
   ];
-
+console.log('gridImages:', gridImages);
   return (
 
     <main className="flex flex-col gap-16 md:gap-32 md:py-24 row-start-2 md:items-center sm:items-start">
       <Hero />
       <div>
         <h2 className="h2">Quelques projets</h2>
-         <Grid leftImages={gridImages.leftImages} rightImages={gridImages.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116' }} />
+         <Grid leftImages={gridImages.leftImages} rightImages={gridImages.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116'}} />
       </div>
       <List />
       {/* <div className="w-full">

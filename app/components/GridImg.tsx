@@ -9,6 +9,7 @@ interface GridImage {
     description: string;
     slug?: string;
     height?: string;
+    canHover?: boolean;
 }
 
 interface GridImgProps {

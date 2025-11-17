@@ -1,30 +1,18 @@
-// export default function ProjectDetails({ params }: { params: { projectId: string } }) {
-//     return (
-//         <div>
-//             <h1>Project: {params.projectId}</h1>
-//             <p>Details about project {params.projectId}...</p>
-//         </div>
-//     );
-// }
-
-// export default async function ProjectDetails({ params }: {
-//     params: Promise<{ projectId: string }>
-// }) {
-//     const resolvedParams = await params;
-//     return (
-//         <div>
-//             <h1>Project: {resolvedParams.projectId}</h1>
-//             <p>Details about project {resolvedParams.projectId}...</p>
-//         </div>
-//     );
-// }
-
 import { getProject } from '@/app/data/projectData'
 import { notFound } from 'next/navigation'
 import Grid from '@/app/components/Grid'
 import TechStack from '@/app/components/TechStack'
-import FsLightBox from '@/app/components/FsLightBox'
+// import FsLightBox from '@/app/components/FsLightBox'
 import Cta from '@/app/components/Cta'
+
+type GridImage = {
+    url: string;
+    alt: string;
+    title: string;
+    description: string;
+    slug?: string;
+    canHover?: boolean;
+};
 
 export default function ProjectDetails({ params }: { params: { projectId: string } }) {
   const project = getProject(params.projectId)
@@ -43,13 +31,13 @@ export default function ProjectDetails({ params }: { params: { projectId: string
       title: project.title,
       description: project.tagLine ?? project.description ?? '',
       slug: ''
-    }
+    } as GridImage
   }
 
   const gridImages = {
     leftImages: [makeImage(0), makeImage(1)],
     rightImages: [makeImage(2), makeImage(3)]
-  }
+  } as { leftImages: [GridImage, GridImage], rightImages: [GridImage, GridImage] };
 
   return (
     <article className="flex flex-col items-center gap-16 md:gap-32 md:py-24">
@@ -66,7 +54,9 @@ export default function ProjectDetails({ params }: { params: { projectId: string
           />
         </div>
         <div className='max-w-2xl gap-8'>
-          <p dangerouslySetInnerHTML={{ __html: project.description.replace(/\n/g, '<br /><br />') }}></p>
+          {project.description && (
+            <p dangerouslySetInnerHTML={{ __html: project.description.replace(/\n/g, '<br /><br />') }}></p>
+          )}
         </div>
       </div>
 
