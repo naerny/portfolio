@@ -63,7 +63,7 @@ export default function WordSlider() {
                                 <span className='whitespace-nowrap'>{skill}.</span>
                             </li>
                         ))}
-                        <li key={appeals[0] + '_2'} className="ms-slider__word"><span className='whitespace-nowrap'>{appeals[0]}</span></li>
+                        <li key={appeals[0] + '_2'} className="ms-slider__word"><span className='whitespace-nowrap'>{appeals[0]}.</span></li>
                     </ul>
                 </div>
             </div>

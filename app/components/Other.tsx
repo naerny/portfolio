@@ -15,9 +15,9 @@ export default function Other() {
                         width={100}
                         height={100}
                         sizes="(max-width: 768px) 100vw, 1200px"
-                        loading="lazy"                         
+                        loading="lazy"
                     />
-                </div>               
+                </div>
                 <div className="rounded-2xl overflow-auto flex-1">
                     <Image
                         className="md:object-cover w-full h-full aspect-square object-top"
@@ -27,10 +27,10 @@ export default function Other() {
                         width={100}
                         height={100}
                         sizes="(max-width: 768px) 100vw, 1200px"
-                        loading="lazy"                         
+                        loading="lazy"
                     />
                 </div>
-               
+
             </div>
             <div className="flex gap-4">
                 <div className="rounded-2xl overflow-auto aspect-square flex-1 max-h-94">
@@ -42,7 +42,7 @@ export default function Other() {
                         width={100}
                         height={100}
                         sizes="(max-width: 768px) 100vw, 1200px"
-                        loading="lazy"                         
+                        loading="lazy"
                     />
                 </div>
             </div>
@@ -56,10 +56,10 @@ export default function Other() {
                         width={100}
                         height={100}
                         sizes="(max-width: 768px) 100vw, 1200px"
-                        loading="lazy"                         
+                        loading="lazy"
                     />
-                </div>                
-                  <div className="rounded-2xl overflow-auto aspect-square flex-1">
+                </div>
+                <div className="rounded-2xl overflow-auto aspect-square flex-1">
                     <Image
                         className="md:object-cover w-full h-full aspect-square object-top object-top"
                         src={'/img/others/tournoi.jpg'}
@@ -68,10 +68,10 @@ export default function Other() {
                         width={100}
                         height={100}
                         sizes="(max-width: 768px) 100vw, 1200px"
-                        loading="lazy"                         
+                        loading="lazy"
                     />
-                </div>                
-            </div>             
+                </div>
+            </div>
         </section>
     )
 }
