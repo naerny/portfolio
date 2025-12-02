@@ -2,9 +2,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-   images: {
+  images: {
     domains: ['picsum.photos'],
   },
+  // output: 'export',
 };
 
 export default nextConfig;

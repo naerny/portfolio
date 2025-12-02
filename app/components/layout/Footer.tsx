@@ -1,16 +1,24 @@
+'use client'
+
 import React from 'react'
 import Image from "next/image";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+
+  function handleMail() {
+    window.location.href = `mailto:nicolas.aerny@gmail.com?subject=${encodeURIComponent('Project Inquiry')}`
+  }
+
   return (
     <footer className="flex gap-6 justify-center flex-col md:flex-row items-center p-8 w-full border-t border-dashed border-(--gray) text-(--gray)">
       <p>Nicolas Aerny @{year}</p>
       <a
         className="flex items-center gap-1 hover:underline hover:underline-offset-4"
-        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="#"
+        onClick={handleMail}
+        // target="_blank"
+        // rel="noopener noreferrer"
       >
         <Image
           aria-hidden
@@ -23,7 +31,7 @@ export default function Footer() {
       </a>
       <a
         className="flex items-center gap-1 hover:underline hover:underline-offset-4"
-        href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+        href="https://www.linkedin.com/in/nicolasaerny/"
         target="_blank"
         rel="noopener noreferrer"
       >

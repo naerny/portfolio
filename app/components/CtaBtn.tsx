@@ -14,7 +14,7 @@ export default function Cta({ mailParts, variant = 'secondary' }: BtnProps) {
   }
 
   return (
-    <Button className="hover:cursor-pointer hover:scale-105" variant={variant} aria-label="Send email" onClick={handleMail}>
+    <Button className="" variant={variant} aria-label="Send email" onClick={handleMail}>
       Prenons contact!
     </Button>
   );

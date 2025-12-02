@@ -15,12 +15,23 @@ export default function Header() {
         <Link href="/">
           <span className='text-shadow-xs text-shadow-orange-50'>Nicolas Aerny</span>
         </Link>
+        <div className='flex gap-2'>
+          <Button
+          href="/cv_nicolas_aerny_2025.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant='secondary'
+        >
+          Mon CV
+        </Button>
+          
         <CtaBtn
           mailParts={['nicolas.aerny', 'gmail.com']}
           aria-label="Send email"
           variant='primary'
         >
         </CtaBtn>
+        </div>
       </div>
     </header>
   )
