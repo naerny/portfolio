@@ -16,21 +16,21 @@ export default function Header() {
           <span className='text-shadow-xs text-shadow-orange-50'>Nicolas Aerny</span>
         </Link>
         <div className='flex gap-2'>
-          <Button
-          href="/cv_nicolas_aerny_2025.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          variant='secondary'
-        >
-          Mon CV
-        </Button>
-          
-        <CtaBtn
-          mailParts={['nicolas.aerny', 'gmail.com']}
-          aria-label="Send email"
-          variant='primary'
-        >
-        </CtaBtn>
+          <Link
+            className="px-4 py-2 rounded-3xl font-medium bg-stone-200 text-(--foreground) hover:bg-stone-400 hover:rounded-lg hover:text-(--background) focus:ring-2 focus:ring-blue-300 transition-all hover:cursor-pointer hover:scale-105"
+            href="/cv_nicolas_aerny_2025.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Consulter mon CV
+          </Link>
+
+          <CtaBtn
+            mailParts={['nicolas.aerny', 'gmail.com']}
+            aria-label="Send email"
+            variant='primary'
+          >
+          </CtaBtn>
         </div>
       </div>
     </header>
