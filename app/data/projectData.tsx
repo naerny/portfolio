@@ -22,23 +22,23 @@ export const projects: Project[] = [
     description: 'Le rapport annuel de l\'empire est un projet d\'expèrimentation autour de la visulation de donnée dans l\'univers de Star Wars. Il montre les pertes subies ainsi que les personnages et espèces avec lesquelles traite l\'empire. \n Ce projet se présente comme un rapport diégétique qui serait présenté au sein même de l\'univers Star Warnes.',
     images: [
       {
-        src: '/img/projects/datavis/02.gif',
+        src: '/img/projects/datavis/02.jpg',
         alt: 'Empire annual report hero section'
       },
       {
-        src: '/img/projects/datavis/01.png',
+        src: '/img/projects/datavis/01.jpg',
         alt: 'Financial dashboard visualization'
       },
       {
-        src: '/img/projects/datavis/04.png',
+        src: '/img/projects/datavis/04.jpg',
         alt: 'Mobile responsive view of the report'
       },
       {
-        src: '/img/projects/datavis/03.png',
+        src: '/img/projects/datavis/03.jpg',
         alt: 'Mobile responsive view of the report'
       },
        {
-        src: '/img/projects/datavis/05.png',
+        src: '/img/projects/datavis/05.jpg',
         alt: 'Mobile responsive view of the report'
       }
     ],
@@ -56,19 +56,19 @@ export const projects: Project[] = [
         alt: 'E-commerce homepage featuring product grid'
       },
       {
-        src: '/img/projects/coachlab/mockup.jpg',
+        src: '/img/projects/coachlab/mockup_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
-        src: '/img/projects/coachlab/27.jpg',
+        src: '/img/projects/coachlab/27_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
-        src: '/img/projects/coachlab/28.jpg',
+        src: '/img/projects/coachlab/28_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
-        src: '/img/projects/coachlab/29.jpg',
+        src: '/img/projects/coachlab/29_small.jpg',
         alt: 'Product detail page with gallery'
       }
     ],
@@ -87,19 +87,19 @@ export const projects: Project[] = [
         alt: 'E-commerce homepage featuring product grid'
       },
       {
-        src: '/img/projects/terravaud/onboarding.jpg',
+        src: '/img/projects/terravaud/onboarding_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
-        src: '/img/projects/terravaud/creation_parcours.jpg',
+        src: '/img/projects/terravaud/creation_parcours_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
-        src: '/img/projects/terravaud/map2.jpg',
+        src: '/img/projects/terravaud/map2_small.jpg',
         alt: 'Product detail page with gallery'
       },
       {
-        src: '/img/projects/terravaud/brandboard.jpg',
+        src: '/img/projects/terravaud/Brandboard_small.jpg',
         alt: 'Product detail page with gallery'
       },
       
@@ -114,19 +114,19 @@ export const projects: Project[] = [
     description: 'Le Baleinev Festival est le festival estudiantin de la Heig-vd. Son site web doit permettre l\'accès aux informations vitales, la programmation, la billeterie. Il doit aussi représenter fidèlement la ligne graphique de l\'édition.',
     images: [
       {
-        src: '/img/projects/baleinev/baleinev.gif',
+        src: '/img/projects/baleinev/baleinev_01.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
       {
-        src: '/img/projects/baleinev/474474932_18483635644033504_119499071726526965_n.jpg',
+        src: '/img/projects/baleinev/474474932_18483635644033504_119499071726526965_n_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
        {
-        src: '/img/projects/baleinev/mobile.jpg',
+        src: '/img/projects/baleinev/mobile_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
        {
-        src: '/img/projects/baleinev/insta.jpg',
+        src: '/img/projects/baleinev/insta_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
        {

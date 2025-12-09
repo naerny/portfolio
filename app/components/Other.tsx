@@ -4,12 +4,12 @@ import { div } from "three/tsl"
 export default function Other() {
     return (
         <section className="flex flex-col gap-4 max-w-4xl">
-            <h2 className="h2">D'autres trucs que j'ai fait</h2>
+            <h2 className="h2">D'autres projets sur lesquels j'ai travaillé</h2>
             <div className="flex flex-col md:flex-row gap-4">
                 <div className="rounded-2xl overflow-auto  flex-1">
                     <Image
                         className="md:object-cover w-full h-full aspect-square object-top"
-                        src={'/img/others/ophtalmique.png'}
+                        src={'/img/others/ophtalmique_small.jpg'}
                         alt={''}
                         quality={100}
                         width={100}
@@ -62,7 +62,7 @@ export default function Other() {
                 <div className="rounded-2xl overflow-auto aspect-square flex-1">
                     <Image
                         className="md:object-cover w-full h-full aspect-square object-top object-top"
-                        src={'/img/others/tournoi.jpg'}
+                        src={'/img/others/tournoi_small.jpg'}
                         alt={''}
                         quality={100}
                         width={100}
