@@ -8,6 +8,7 @@ import Cta from '@/app/components/Cta'
 type GridImage = {
   url: string;
   alt: string;
+  thumb: string;
   title: string;
   description: string;
   slug?: string;
