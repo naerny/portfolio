@@ -23,22 +23,27 @@ export const projects: Project[] = [
     images: [
       {
         src: '/img/projects/datavis/02.jpg',
+        thumb: '/img/projects/datavis/02_small.jpg',
         alt: 'Empire annual report hero section'
       },
       {
         src: '/img/projects/datavis/01.jpg',
+        thumb: '/img/projects/datavis/01_small.jpg',
         alt: 'Financial dashboard visualization'
       },
       {
         src: '/img/projects/datavis/04.jpg',
+        thumb: '/img/projects/datavis/04_small.jpg',
         alt: 'Mobile responsive view of the report'
       },
       {
         src: '/img/projects/datavis/03.jpg',
+        thumb: '/img/projects/datavis/03_small.jpg',
         alt: 'Mobile responsive view of the report'
       },
        {
         src: '/img/projects/datavis/05.jpg',
+        thumb: '/img/projects/datavis/05_small.jpg',
         alt: 'Mobile responsive view of the report'
       }
     ],
@@ -53,22 +58,27 @@ export const projects: Project[] = [
     images: [
       {
         src: '/img/projects/coachlab/01.jpg',
+        thumb: '/img/projects/coachlab/cover_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
       {
         src: '/img/projects/coachlab/mockup_small.jpg',
+        thumb: '/img/projects/coachlab/mockup_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
         src: '/img/projects/coachlab/27_small.jpg',
+        thumb: '/img/projects/coachlab/27_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
         src: '/img/projects/coachlab/28_small.jpg',
+        thumb: '/img/projects/coachlab/28_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
         src: '/img/projects/coachlab/29_small.jpg',
+        thumb: '/img/projects/coachlab/29_small.jpg',
         alt: 'Product detail page with gallery'
       }
     ],
@@ -87,19 +97,23 @@ export const projects: Project[] = [
         alt: 'E-commerce homepage featuring product grid'
       },
       {
-        src: '/img/projects/terravaud/onboarding_small.jpg',
+        src: '/img/projects/terravaud/onboarding.jpg',
+        thumb: '/img/projects/terravaud/onboarding_small.jpg',
+        alt: 'Product detail page with gallery',
+      },
+       {
+        src: '/img/projects/terravaud/creation_parcours.jpg',
+        thumb: '/img/projects/terravaud/creation_parcours_small.jpg',
         alt: 'Product detail page with gallery'
       },
        {
-        src: '/img/projects/terravaud/creation_parcours_small.jpg',
-        alt: 'Product detail page with gallery'
-      },
-       {
-        src: '/img/projects/terravaud/map2_small.jpg',
+        src: '/img/projects/terravaud/map2.jpg',
+        thumb: '/img/projects/terravaud/map2_small.jpg',
         alt: 'Product detail page with gallery'
       },
       {
-        src: '/img/projects/terravaud/Brandboard_small.jpg',
+        src: '/img/projects/terravaud/Brandboard.jpg',
+        thumb: '/img/projects/terravaud/Brandboard_small.jpg',
         alt: 'Product detail page with gallery'
       },
       
@@ -115,22 +129,27 @@ export const projects: Project[] = [
     images: [
       {
         src: '/img/projects/baleinev/baleinev_01.jpg',
+        thumb: '/img/projects/baleinev/baleinev_01_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
       {
-        src: '/img/projects/baleinev/474474932_18483635644033504_119499071726526965_n_small.jpg',
+        src: '/img/projects/baleinev/474474932_18483635644033504_119499071726526965_n.jpg',
+        thumb: '/img/projects/baleinev/474474932_18483635644033504_119499071726526965_n_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
        {
         src: '/img/projects/baleinev/mobile_small.jpg',
+        thumb: '/img/projects/baleinev/mobile_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
        {
         src: '/img/projects/baleinev/insta_small.jpg',
+        thumb: '/img/projects/baleinev/insta_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
        {
-        src: '/img/projects/baleinev/desktop.jpg',
+        src: '/img/projects/baleinev/desktop.png',
+        thumb: '/img/projects/baleinev/desktop_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
     ],

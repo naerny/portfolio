@@ -3,6 +3,8 @@ import { useState } from "react";
 // import FsLightbox from "fslightbox-react";
 import Link from 'next/link'
 import GridImg from './GridImg';
+import SimpleGallery from "./SimpleGallery";
+import { div } from "three/tsl";
 
 interface GridImage {
     url: string;
@@ -27,6 +29,7 @@ interface GridProps {
 
 export default function Grid({ leftImages, rightImages, canHover = true, heights }: GridProps) {
     return (
+        <div>
         <div className="gridImg__container flex flex-wrap gap-4 w-full">
             <div className="w-full md:basis-[calc(33.333%-0.5rem)] flex flex-col gap-4">               
                 <GridImg image={leftImages[0]} className={`${heights?.leftTop}`} />
@@ -37,5 +40,9 @@ export default function Grid({ leftImages, rightImages, canHover = true, heights
                 <GridImg image={rightImages[1]} className={`${heights?.rightBottom}`} />
             </div>
         </div>
+
+        <div>        
+      </div>
+</div>
     );
 }

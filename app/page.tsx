@@ -72,6 +72,7 @@ export default function Home() {
 
     <main className="flex flex-col gap-16 md:gap-32 md:py-24 row-start-2 md:items-center sm:items-start">
       <Hero />
+      
       <div>
         <h2 className="h2">Quelques projets</h2>
         <Grid leftImages={gridImages.leftImages} rightImages={gridImages.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116' }} />

@@ -2,16 +2,16 @@ import { getProject } from '@/app/data/projectData'
 import { notFound } from 'next/navigation'
 import Grid from '@/app/components/Grid'
 import TechStack from '@/app/components/TechStack'
-// import FsLightBox from '@/app/components/FsLightBox'
+import SimpleGallery from '@/app/components/SimpleGallery'
 import Cta from '@/app/components/Cta'
 
 type GridImage = {
-    url: string;
-    alt: string;
-    title: string;
-    description: string;
-    slug?: string;
-    canHover?: boolean;
+  url: string;
+  alt: string;
+  title: string;
+  description: string;
+  slug?: string;
+  canHover?: boolean;
 };
 
 export default function ProjectDetails({ params }: { params: { projectId: string } }) {
@@ -27,6 +27,7 @@ export default function ProjectDetails({ params }: { params: { projectId: string
     const img = images[idx]
     return {
       url: img?.src ?? '/placeholder.jpg',
+      thumb: img?.thumb ?? '/placeholder_small.jpg',
       alt: img?.alt ?? 'Project preview',
       title: project.title,
       description: project.tagLine ?? project.description ?? '',
@@ -38,6 +39,8 @@ export default function ProjectDetails({ params }: { params: { projectId: string
     leftImages: [makeImage(0), makeImage(1)],
     rightImages: [makeImage(2), makeImage(3)]
   } as { leftImages: [GridImage, GridImage], rightImages: [GridImage, GridImage] };
+
+  const galleryImages = [makeImage(0), makeImage(1), makeImage(2), makeImage(3)];
 
   return (
     <article className="flex flex-col items-center gap-16 md:gap-32 md:py-24">
@@ -61,7 +64,44 @@ export default function ProjectDetails({ params }: { params: { projectId: string
       </div>
 
       <div className="w-full max-w-7xl">
-        <Grid leftImages={gridImages.leftImages} rightImages={gridImages.rightImages} canHover={false} heights={{ leftTop: 'md:h-96', leftBottom: 'md:h-116', rightTop: 'md:h-72', rightBottom: 'md:h-140' }} />
+        {/* <Grid leftImages={gridImages.leftImages} rightImages={gridImages.rightImages} canHover={false} heights={{ leftTop: 'md:h-96', leftBottom: 'md:h-116', rightTop: 'md:h-72', rightBottom: 'md:h-140' }} /> */}
+        <SimpleGallery
+          galleryID="my-test-gallery"
+          images={[
+            {
+              largeURL:
+                galleryImages[0].url,
+              thumbnailURL:
+                galleryImages[0].thumb,
+              width: 1200,
+              height: 900,
+            },
+            {
+              largeURL:
+                galleryImages[1].url,
+              thumbnailURL:
+                galleryImages[1].thumb,
+              width: 1200,
+              height: 900,
+            },
+            {
+              largeURL:
+                galleryImages[2].url,
+              thumbnailURL:
+                galleryImages[2].thumb,
+              width: 1200,
+              height: 900,
+            },
+            {
+              largeURL:
+                galleryImages[3].url,
+              thumbnailURL:
+                galleryImages[3].thumb,
+              width: 1200,
+              height: 900,
+            },
+          ]}
+        />
       </div>
 
       <TechStack technologies={project.technologies} />
