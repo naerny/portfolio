@@ -1,6 +1,4 @@
 import WordSlider from "./WordSlider";
-import { skillNames } from '@/app/data/skills';
-
 
 export default function Hero() {
     return (

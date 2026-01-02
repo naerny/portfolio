@@ -62,10 +62,13 @@ body {
 .gridImg__container {}
 
 #wordCloud {
-  height: 500px !important;
+  height: 300px !important;
   /* z-index: -1; */
   position: relative;
-  /* background-color: var(--gray) */
+
+  @media(min-width: 768px) {
+    height: 500px !important;
+  }
 }
 
 #wordCloud::before {

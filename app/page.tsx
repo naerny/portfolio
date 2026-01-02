@@ -4,6 +4,7 @@ import Profile from "./components/Profile";
 import Footer from "./components/layout/Footer";
 import Hero from "./components/Hero";
 import Button from "./components/Button";
+import WordCloud from "./components/WordCloud";
 import Grid from "./components/Grid";
 import List from "./components/List";
 import Cta from "./components/Cta";
@@ -72,8 +73,13 @@ export default function Home() {
 
     <main className="flex flex-col gap-16 md:gap-32 md:py-24 row-start-2 md:items-center sm:items-start">
       <Hero />
+
+     <div className="w-full">
+      <h2 className="h2">Compétences</h2>
+      <WordCloud />
+     </div>
       
-      <div>
+      <div className="w-full">
         <h2 className="h2">Quelques projets</h2>
         <Grid leftImages={gridImages.leftImages} rightImages={gridImages.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116' }} />
       </div>
