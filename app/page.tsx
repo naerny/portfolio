@@ -76,7 +76,7 @@ export default function Home() {
 
      <div className="w-full">
       <h2 className="h2">Compétences</h2>
-      <WordCloud />
+      {/* <WordCloud /> */}
      </div>
       
       <div className="w-full">
