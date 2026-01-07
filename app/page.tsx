@@ -75,12 +75,12 @@ export default function Home() {
       <Hero />
 
      <div className="w-full">
-      <h2 className="h2">Compétences</h2>
-      {/* <WordCloud /> */}
+      {/* <h2 className="h2">Compétences</h2>
+      <WordCloud /> */}
      </div>
       
       <div className="w-full">
-        <h2 className="h2">Quelques projets</h2>
+        <h2 className="h2">Projets académiques</h2>
         <Grid leftImages={gridImages.leftImages} rightImages={gridImages.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116' }} />
       </div>
       <List />
