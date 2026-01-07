@@ -105,7 +105,7 @@ export default function ProjectDetails({ params }: { params: { projectId: string
         />
       </div>
 
-      <TechStack technologies={project.technologies} />
+      <TechStack technologies={project.technologies} skills={project.skills} />
 
       <Cta input={['nicolas.aerny', 'gmail.com']} />
 

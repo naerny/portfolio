@@ -9,6 +9,7 @@ export interface Project {
   title: string;
   tagLine: string;
   images: ProjectImage[];
+  skills: string[];
   technologies: string[];
   link?: string;
   github?: string;
@@ -48,7 +49,8 @@ export const projects: Project[] = [
         alt: 'Mobile responsive view of the report'
       }
     ],
-    technologies: ['Vue.js', 'Figma', 'Ui design', 'D3', 'Interaction design'],
+    skills: ['Data Visualization', 'UI Design', 'Graphic Design', 'Gestion de projet', 'Interaction design'],
+    technologies: ['Vue.js', 'Figma', 'D3', 'Git', 'Suite Adobe'],
     github: 'https://github.com/username/portfolio'
   },
   {
@@ -83,7 +85,8 @@ export const projects: Project[] = [
         alt: 'Product detail page with gallery'
       }
     ],
-    technologies: ['Vue.js', 'Tailwind CSS', 'Figma', 'UI/UX Design', 'Recherche UX', 'Branding', 'Brand Design', 'Design Graphique', 'Réseaux sociaux', 'Brand strategy'],
+    skills: ['Gestion de projet', 'Coordination d’équipes', 'Suivi des délais et des livrables', 'Analyse des besoins utilisateurs', 'Pilotage de projets digitaux', 'Stratégie de communication', 'Création de contenu', 'Campagnes publicitaires', 'Recherche UX', 'UI/UX Design', 'Développement front-end'],
+    technologies: ['Vue.js', 'Tailwind CSS', 'Figma', 'Suite Adobe', 'Git', 'Nuxt.js', 'Notion', 'Miro', 'Asana'],
     github: 'https://github.com/username/ecommerce'
   },
 
@@ -119,7 +122,8 @@ export const projects: Project[] = [
       },
       
     ],
-    technologies: ['Vue.js', 'Tailwind CSS', 'Laravel', 'npm', 'Figma', 'Composer', 'UI/UX Design', 'Gestion de projet', 'Recherche UX', 'Développement front-end', 'Développement back-end'],
+    skills: ['UI/UX Design', 'Recherche UX', 'Prototypage', 'Design d\'interaction', 'Design visuel', 'Développement front-end', 'Développement back-end', 'Gestion de projet', 'Coordination d\'équipes', 'Suivi des délais et des livrables', 'Analyse des besoins utilisateurs'],
+    technologies: ['Vue.js', 'Tailwind CSS', 'Laravel', 'npm', 'Figma', 'Composer'],
     github: 'https://github.com/username/ecommerce'
   },
   {
@@ -154,6 +158,7 @@ export const projects: Project[] = [
         alt: 'E-commerce homepage featuring product grid'
       },
     ],
+    skills: ['Gestion de projet', 'Coordination d’équipes', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Maintenance de site web', 'Optimisation des performances web'],
     technologies: ['Wordpress', 'Elementor', 'Docker', 'Machine virtuelle'],
     github: 'https://github.com/username/ecommerce'
   },
