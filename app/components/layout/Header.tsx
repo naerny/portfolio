@@ -11,7 +11,7 @@ export default function Header() {
       after:content-[''] after:absolute after:inset-0 after:backdrop-blur-md after:-z-10 after:bg-linear-to-b after:from-orange-50/[100%] after:from-0% after:via-orange-50/[50%] after:via-75%
        after:to-orange-50/[30%]
        border-b border-dashed border-(--gray)">
-      <div className='flex items-center justify-between max-w-7xl w-full'>
+      <div className='flex flex-col md:flex-row gap-2 justify-center md:justify-between flex-wrap md:flex-nowrap items-center max-w-7xl w-full'>
         <Link href="/">
           <span className='text-shadow-xs text-shadow-orange-50'>Nicolas Aerny</span>
         </Link>
