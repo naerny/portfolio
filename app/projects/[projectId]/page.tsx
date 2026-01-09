@@ -11,6 +11,7 @@ type GridImage = {
   thumb: string;
   title: string;
   description: string;
+  heroImage?: string;
   slug?: string;
   canHover?: boolean;
 };
@@ -50,11 +51,11 @@ export default function ProjectDetails({ params }: { params: { projectId: string
           <h1 className="h1">{project.title}</h1>
           <p className='text-lg'>{project.tagLine}</p>
         </div>
-        <div className='w-full h-64 md:h-128 overflow-hidden rounded-lg'>
+        <div className={`w-full h-64 md:h-128 overflow-hidden rounded-lg`}>
           <img
             src={project.images[0].src}
             alt={project.images[0].alt}
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover ${project.heroImage ? 'object-top' : ''}`}
           />
         </div>
         <div className='max-w-2xl gap-8'>

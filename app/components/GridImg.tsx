@@ -6,6 +6,7 @@ interface GridImage {
     url: string;
     alt: string;
     title: string;
+    heroImage?: string;
     description: string;
     slug?: string;
     height?: string;
@@ -25,7 +26,7 @@ export default function GridImg({ image, className= "" }: GridImgProps) {
             className={`w-full rounded-2xl overflow-hidden relative ${canHover ? 'group hover:scale-95' : ''} duration-300 ease-out ${className}`}
         >
             <Image
-                className={`md:object-cover w-full h-full sepia-0 duration-300 ease-out ${canHover ? 'group-hover:sepia-30 group-hover:scale-110' : ''}`}
+                className={`md:object-cover w-full h-full sepia-0 duration-300 ease-out ${canHover ? 'group-hover:sepia-30 group-hover:scale-110' : ''} ${image.heroImage ? 'object-top' : ''}`}
                 src={image.url}
                 alt={image.alt}
                 quality={100}

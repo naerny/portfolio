@@ -8,6 +8,7 @@ export interface Project {
   id: string;
   title: string;
   tagLine: string;
+  heroImage?: string;
   images: ProjectImage[];
   skills: string[];
   technologies: string[];
@@ -160,6 +161,43 @@ export const projects: Project[] = [
     ],
     skills: ['Gestion de projet', 'Coordination d’équipes', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Maintenance de site web', 'Optimisation des performances web'],
     technologies: ['Wordpress', 'Elementor', 'Docker', 'Machine virtuelle'],
+    github: 'https://github.com/username/ecommerce'
+  },
+  {
+    id: 'liris',
+    title: 'Liris',
+    heroImage: 'top',
+    tagLine: 'Un logiciel de gestion des cabinets d\'ophtalmologie, pour aider les professionnels de la santé à gérer leurs patients et leur pratique plus simplement. Et se concentrer sur l\'essentiel.',
+    description: 'Liris est une solution logicielle complète conçue pour les cabinets d\'ophtalmologie, visant à simplifier la gestion des patients et des opérations quotidiennes. Le logiciel offre une interface intuitive permettant aux professionnels de la santé de gérer efficacement les rendez-vous, les dossiers médicaux, la facturation et les communications avec les patients. En automatisant les tâches administratives, Liris permet aux ophtalmologistes de se concentrer davantage sur les soins aux patients, améliorant ainsi la qualité du service tout en optimisant la productivité du cabinet.',
+    images: [
+      {
+        src: '/img/projects/liris/01.jpg',
+        thumb: '/img/projects/liris/01_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+      {
+        src: '/img/projects/liris/06.jpg',
+        thumb: '/img/projects/liris/06_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+       {
+        src: '/img/projects/liris/03.jpg',
+        thumb: '/img/projects/liris/03_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+      {
+       src: '/img/projects/liris/04.jpg',
+        thumb: '/img/projects/liris/04_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+       {
+        src: '/img/projects/liris/05.jpg',
+        thumb: '/img/projects/liris/05_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+    ],
+    skills: ['Gestion de projet', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Relation Client'],
+    technologies: ['Wordpress', 'Sass', 'Jquery', 'PHP', 'MySQL', 'Git', 'Figma', 'Wordpress Bedrock'],
     github: 'https://github.com/username/ecommerce'
   },
 ];

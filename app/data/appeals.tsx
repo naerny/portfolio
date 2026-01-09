@@ -4,8 +4,6 @@ export const appeals: string[] = [
   "les Ui carrées",
   "les interfaces accessibles",
   "les projets rondement menés",
-  "les passions qui débordent",
   "les challenges stimulants",
   "l'innovation numérique",
-  
 ];
