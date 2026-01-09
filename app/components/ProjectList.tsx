@@ -31,11 +31,11 @@ export default function ProjectList({ leftImages, rightImages, canHover = true, 
     return (
         <div>
         <div className="gridImg__container flex flex-wrap gap-4 w-full">
-            <div className="w-full flex gap-4 h-64">               
-                <GridImg image={leftImages[0]} className="h-full" />
-                <GridImg image={leftImages[1]} className="h-full" /> 
-                <GridImg image={rightImages[0]} className="h-full" /> 
-                <GridImg image={rightImages[1]} className="h-full" />               
+            <div className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-4">               
+                <GridImg image={leftImages[0]} className="h-64" />
+                <GridImg image={leftImages[1]} className="h-64" /> 
+                <GridImg image={rightImages[0]} className="h-64" /> 
+                <GridImg image={rightImages[1]} className="h-64" />               
             </div>            
         </div>
 
