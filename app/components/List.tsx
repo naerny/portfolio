@@ -16,11 +16,11 @@ export default function List() {
 
   return (
     <section className="w-full section-list">
-      <h2 className="h2">Education et expérience</h2>
+      <h2 className="h2 reveal-left">Education et expérience</h2>
 
       <ul className="flex flex-col gap-4">
         {sortedListData.map((item, index) => (
-          <li key={index} className="flex flex-wrap border-b border-stone-300 pb-4 pt-2">
+          <li key={index} className="reveal flex flex-wrap border-b border-stone-300 pb-4 pt-2">
             <div className="w-full flex md:flex-1 align-bottom">
               <p className="flex flex-col mt-auto">
                 <span className="mb-[-5px] text-stone-500">{item.title}</span>

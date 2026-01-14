@@ -24,7 +24,7 @@ export default function SimpleGallery(props) {
   return (
     <div
     // className="gridImg__container flex flex-wrap gap-4 w-full"
-    className="gridImg__container grid md:grid-cols-3 md:grid-rows-[20rem_4rem_20rem] gap-4 w-full"
+    className="reveal gridImg__container grid md:grid-cols-3 md:grid-rows-[20rem_4rem_20rem] gap-4 w-full"
     id={props.galleryID}>
       {props.images.map((image, index) => (
         <a
@@ -37,7 +37,7 @@ export default function SimpleGallery(props) {
         >
           <div
           // className={`w-full rounded-2xl overflow-hidden relative group hover:scale-95 duration-300 ease-out ${className}`}
-          className={`w-full h-full rounded-2xl overflow-hidden relative group hover:scale-95 duration-300 ease-out`}
+          className={`reveal shadow-md shadow-(--background) w-full h-full rounded-2xl overflow-hidden relative group hover:scale-95 duration-300 ease-out`}
           > 
 
           

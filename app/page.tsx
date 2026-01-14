@@ -1,10 +1,7 @@
-import Image from "next/image";
-import Header from "./components/layout/Header";
-import Profile from "./components/Profile";
-import Footer from "./components/layout/Footer";
+
+'use client';
+import { useEffect } from 'react';
 import Hero from "./components/Hero";
-import Button from "./components/Button";
-import WordCloud from "./components/WordCloud";
 import Grid from "./components/Grid";
 import List from "./components/List";
 import Cta from "./components/Cta";
@@ -64,18 +61,18 @@ const academicProjects = {
 const profProjects = {
   leftImages: [
     {
-      url: projects[0].images[0].src,
-      alt: projects[0].images[0].alt,
-      title: projects[0].title,
-      description: projects[0].tagLine,
-      slug: projects[0].id
+      url: projects[5].images[0].src,
+      alt: projects[5].images[0].alt,
+      title: projects[5].title,
+      description: projects[5].tagLine,
+      slug: projects[5].id
     } as GridImage,
     {
-      url: projects[1].images[0].src,
-      alt: projects[1].images[0].alt,
-      title: projects[1].title,
-      description: projects[1].tagLine,
-      slug: projects[1].id
+      url: projects[6].images[0].src,
+      alt: projects[6].images[0].alt,
+      title: projects[6].title,
+      description: projects[6].tagLine,
+      slug: projects[6].id
     } as GridImage
   ],
   rightImages: [
@@ -88,17 +85,34 @@ const profProjects = {
       slug: projects[4]?.id || ''
     } as GridImage,
     {
-      url: projects[3]?.images[0]?.src || '/placeholder.jpg',
-      alt: projects[3]?.images[0]?.alt || 'Project preview',
-      title: projects[3]?.title || 'Coming soon',
-      description: projects[3]?.tagLine || 'Project in development',
-      slug: projects[3]?.id || ''
+      url: projects[7]?.images[0]?.src || '/placeholder.jpg',
+      alt: projects[7]?.images[0]?.alt || 'Project preview',
+      title: projects[7]?.title || 'Coming soon',
+      description: projects[7]?.tagLine || 'Project in development',
+      slug: projects[7]?.id || ''
     } as GridImage,
   ],
 } as { leftImages: [GridImage, GridImage], rightImages: [GridImage, GridImage] };
 
 
 export default function Home() {
+   useEffect(() => {
+    // Dynamically import ScrollReveal only on client side
+    import('scrollreveal').then((ScrollReveal) => {
+      const sr = ScrollReveal.default({
+        reset: false,
+        distance: '30px',
+        duration: 850,
+        delay: 1000
+      });
+
+      // Reveal elements with a class
+      sr.reveal('.reveal', { origin: 'bottom' });
+      // sr.reveal('.reveal-delay', { origin: 'left', delay: 400 });
+      sr.reveal('.reveal-delay', { origin: 'bottom', delay: 2000 });
+      sr.reveal('.reveal-left', { origin: 'left', delay: 500 });
+    });
+  }, []);
 
   const words = [
     { text: 'React', value: 100 },
@@ -121,20 +135,20 @@ export default function Home() {
       <WordCloud /> */}
      </div>
       
-      <div className="w-full">
-        <h2 className="h2">Projets professionnels</h2>
+      <div className="w-full grid-item">
+        <h2 className="h2 reveal-left">Projets professionnels</h2>
         <Grid leftImages={profProjects.leftImages} rightImages={profProjects.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116' }} />
       </div>
       <List />
        <div className="w-full">
-        <h2 className="h2">Projets académiques</h2>
+        <h2 className="h2 reveal-left">Projets académiques</h2>
         <ProjectList leftImages={academicProjects.leftImages} rightImages={academicProjects.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116' }} />
       </div>
       {/* <div className="w-full">
         <h2 className="h2 md:text-right">Ça fait quoi un ingénieur des médias?</h2>
         <App />
       </div> */}
-      <Other />
+      {/* <Other /> */}
       <Cta input={['nicolas.aerny', 'gmail.com']} />
     </main>
 

@@ -23,7 +23,7 @@ export default function GridImg({ image, className= "" }: GridImgProps) {
     const halfHeight = image.height ? Math.floor(parseInt(image.height) / 4) : 0;
     const Content = () => (
          <div 
-            className={`w-full rounded-2xl overflow-hidden relative ${canHover ? 'group hover:scale-95' : ''} duration-300 ease-out ${className}`}
+            className={`reveal w-full rounded-2xl overflow-hidden relative ${canHover ? 'group hover:scale-95' : ''} duration-300 ease-out ${className}`}
         >
             <Image
                 className={`md:object-cover w-full h-full sepia-0 duration-300 ease-out ${canHover ? 'group-hover:sepia-30 group-hover:scale-110' : ''} ${image.heroImage ? 'object-top' : ''}`}

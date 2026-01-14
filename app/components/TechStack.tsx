@@ -15,18 +15,18 @@ export default function TechStack({ technologies, skills }: { technologies: stri
 
     return (
         <div className="w-full max-w-4xl flex flex-col gap-4">
-            <h2 className="h2">Stack du projet et compétences</h2>
+            <h2 className="h2 reveal-left">Stack du projet et compétences</h2>
             <div>
                 {sortedSkills.length > 0 && (
                     <>
-                        <h3 className="h4">Compétences</h3>
+                        <h3 className="h4 reveal-left">Compétences</h3>
                         <div className="flex flex-wrap gap-4 py-2 md:py-0">
                             {sortedSkills.map((skill) => {
                                 const iconName = normalizeTechName(skill);
 
                                 return (
-                                    <div key={`skill-${skill}`} className="flex items-center gap-2 border border-dashed border-(--gray) p-2 rounded-xl">
-                                        <div className="bg-(--gray) w-3 h-3 rounded-lg"></div>
+                                    <div key={`skill-${skill}`} className="reveal-left-delay flex items-center gap-2 border border-dashed border-(--lightgray) bg-amber-500/10 py-2 px-4 rounded-3xl inset-shadow-sm inset-(--gray)">
+                                        <div className="bg-(--gray) w-2 h-2 rounded-lg"></div>
                                         <span className="">{skill}</span>
                                     </div>
                                 );
@@ -36,13 +36,13 @@ export default function TechStack({ technologies, skills }: { technologies: stri
                 )}
             </div>
             <div>
-                <h3 className="h4">Technologies</h3>
+                <h3 className="h4 reveal-left">Technologies</h3>
                 <div className="flex flex-wrap gap-4 py-2 md:py-0">
                     {sortedTechnologies.map((tech) => {
                         const iconName = normalizeTechName(tech);
 
                         return (
-                            <div key={tech} className="flex items-center gap-2 border border-dashed border-(--gray) p-2 rounded-xl">
+                            <div key={tech} className="reveal-left-delay flex items-center gap-2 border border-dashed border-(--lightgray) bg-(--lightgray)/20 py-2 px-4 rounded-3xl inset-shadow-sm inset-(--gray)">
                                 {/* <Image
                                 aria-hidden
                                 src={`/tech/nextjs.svg`}
@@ -50,7 +50,7 @@ export default function TechStack({ technologies, skills }: { technologies: stri
                                 width={32}
                                 height={32}
                             /> */}
-                                <div className="bg-(--gray) w-3 h-3 rounded-lg"></div>
+                                <div className="bg-(--gray) w-2 h-2 rounded-lg"></div>
                                 <span className="">
                                     {tech}
                                 </span>

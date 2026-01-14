@@ -1,3 +1,5 @@
+'use client';
+import { useEffect } from 'react';
 import { getProject } from '@/app/data/projectData'
 import { notFound } from 'next/navigation'
 import Grid from '@/app/components/Grid'
@@ -22,6 +24,25 @@ export default function ProjectDetails({ params }: { params: { projectId: string
   if (!project) {
     notFound()
   }
+
+   useEffect(() => {
+    // Dynamically import ScrollReveal only on client side
+    import('scrollreveal').then((ScrollReveal) => {
+      const sr = ScrollReveal.default({
+        reset: false,
+        distance: '30px',
+        duration: 850,
+        delay: 1000
+      });
+
+      // Reveal elements with a class
+      sr.reveal('.reveal', { origin: 'bottom' });
+      // sr.reveal('.reveal-delay', { origin: 'left', delay: 400 });
+      sr.reveal('.reveal-delay', { origin: 'bottom', delay: 2000 });
+      sr.reveal('.reveal-left', { origin: 'left', delay: 500 });
+       sr.reveal('.reveal-left-delay', { origin: 'left', delay: 1500 });
+    });
+  }, []);
 
   // build gridImages from the current project's images (use fallbacks if fewer than 4)
   const images = (project.images ?? []).slice(1)
@@ -48,19 +69,19 @@ export default function ProjectDetails({ params }: { params: { projectId: string
     <article className="flex flex-col items-center gap-16 md:gap-32 md:py-24">
       <div className='w-full flex flex-col items-center gap-8'>
         <div className='self-start w-full md:max-w-[75%] lg:max-w-[50%]'>
-          <h1 className="h1">{project.title}</h1>
-          <p className='text-lg'>{project.tagLine}</p>
+          <h1 className="h1 reveal">{project.title}</h1>
+          <p className='text-lg reveal-delay'>{project.tagLine}</p>
         </div>
         <div className={`w-full h-64 md:h-128 overflow-hidden rounded-lg`}>
           <img
             src={project.images[0].src}
             alt={project.images[0].alt}
-            className={`w-full h-full object-cover ${project.heroImage ? 'object-top' : ''}`}
+            className={`reveal w-full h-full object-cover ${project.heroImage ? 'object-top' : ''}`}
           />
         </div>
         <div className='max-w-2xl gap-8'>
           {project.description && (
-            <p dangerouslySetInnerHTML={{ __html: project.description.replace(/\n/g, '<br /><br />') }}></p>
+            <p dangerouslySetInnerHTML={{ __html: project.description.replace(/\n/g, '<br /><br />') }} className='reveal'></p>
           )}
         </div>
       </div>

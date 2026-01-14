@@ -171,8 +171,8 @@ export const projects: Project[] = [
     description: 'Liris est une solution logicielle complète conçue pour les cabinets d\'ophtalmologie, visant à simplifier la gestion des patients et des opérations quotidiennes. Le logiciel offre une interface intuitive permettant aux professionnels de la santé de gérer efficacement les rendez-vous, les dossiers médicaux, la facturation et les communications avec les patients. En automatisant les tâches administratives, Liris permet aux ophtalmologistes de se concentrer davantage sur les soins aux patients, améliorant ainsi la qualité du service tout en optimisant la productivité du cabinet.',
     images: [
       {
-        src: '/img/projects/liris/01.jpg',
-        thumb: '/img/projects/liris/01_small.jpg',
+        src: '/img/projects/liris/08.jpg',
+        thumb: '/img/projects/liris/08_small.jpg',
         alt: 'E-commerce homepage featuring product grid'
       },
       {
@@ -197,6 +197,114 @@ export const projects: Project[] = [
       },
     ],
     skills: ['Gestion de projet', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Relation Client'],
+    technologies: ['Wordpress', 'Sass', 'Jquery', 'PHP', 'MySQL', 'Git', 'Figma', 'Wordpress Bedrock'],
+    github: 'https://github.com/username/ecommerce'
+  },
+  {
+    id: 'ophtalmique',
+    title: 'Hôpital Ophtalmique',
+    tagLine: 'Refonte de la homepage du site de l\'Hôpital ophtalmique de Lausanne pour améliorer la présence en ligne et l\'accessibilité pour les patients.',
+    description: 'La refonte du site de l\'Hôpital ophtalmique de Lausanne visait à moderniser la présence en ligne de l\'établissement et améliorer l\'expérience utilisateur pour les patients. Ce projet comprenait la réorganisation complète de la homepage, optimisant la navigation, la mise en avant des services et l\'accessibilité aux informations essentielles. Le nouveau site reflète l\'excellence médicale de l\'hôpital tout en facilitant la prise de rendez-vous et l\'accès aux informations pratiques pour les patients.',
+    images: [
+      {
+        src: '/img/projects/ophtalmique/01.jpg',
+        thumb: '/img/projects/ophtalmique/01_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+      {
+        src: '/img/projects/ophtalmique/02.jpg',
+        thumb: '/img/projects/ophtalmique/02_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+       {
+        src: '/img/projects/ophtalmique/03.jpg',
+        thumb: '/img/projects/ophtalmique/03_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+      {
+       src: '/img/projects/ophtalmique/04.jpg',
+        thumb: '/img/projects/ophtalmique/04_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+       {
+        src: '/img/projects/ophtalmique/05.jpg',
+        thumb: '/img/projects/ophtalmique/05_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+    ],
+    skills: ['Gestion de projet', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Relation Client'],
+    technologies: ['Wordpress', 'Sass', 'Jquery', 'PHP', 'MySQL', 'Git', 'Figma', 'Wordpress Bedrock'],
+    github: 'https://github.com/username/ecommerce'
+  },
+  {
+    id: 'forumepfl',
+    title: 'Forum EPFL',
+    tagLine: 'Une plateforme de networking professionnel reliant les étudiants EPFL aux entreprises et recruteurs.',
+    description: 'Le Forum EPFL est une plateforme professionnelle innovante conçue pour créer des connexions entre les étudiants de l\'EPFL et les entreprises leaders du marché. Ce projet facilite les rencontres entre talents émergents et recruteurs, offrant aux étudiants des opportunités de stage, d\'emploi et de mentoring. La plateforme propose une expérience utilisateur optimisée avec des fonctionnalités de matching professionnel, des profils détaillés et des outils de communication directe pour favoriser les échanges constructifs et les partenariats durables.',
+    images: [
+      {
+        src: '/img/projects/forumepfl/01.jpg',
+        thumb: '/img/projects/forumepfl/01_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+      {
+        src: '/img/projects/forumepfl/02.jpg',
+        thumb: '/img/projects/forumepfl/02_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+       {
+        src: '/img/projects/forumepfl/03.jpg',
+        thumb: '/img/projects/forumepfl/03_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+      {
+       src: '/img/projects/forumepfl/04.jpg',
+        thumb: '/img/projects/forumepfl/04_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+       {
+        src: '/img/projects/forumepfl/05.jpg',
+        thumb: '/img/projects/forumepfl/05_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+    ],
+    skills: ['Gestion de projet', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Relation Client'],
+    technologies: ['Wordpress', 'Sass', 'Jquery', 'PHP', 'MySQL', 'Git', 'Figma', 'Wordpress Bedrock'],
+    github: 'https://github.com/username/ecommerce'
+  },
+  {
+    id: 'epg',
+    title: ' Eglise protestante de Genève',
+    tagLine: 'Refonte complète du site web pour moderniser la présence digitale et l\'engagement communautaire.',
+    description: 'La refonte du site de l\'Église protestante de Genève visait à moderniser sa présence digitale et à offrir une meilleure expérience utilisateur aux fidèles et visiteurs. Ce projet comprenait une complète réimagination de l\'interface, l\'optimisation de la navigation, la mise en avant des services et événements, ainsi que l\'intégration de nouvelles fonctionnalités pour favoriser l\'engagement communautaire. Le nouveau site reflète les valeurs de l\'église tout en facilitant l\'accès aux informations pastorales, aux horaires des services et aux possibilités de participation à la vie communautaire.',
+    images: [
+      {
+        src: '/img/projects/epg/01.jpg',
+        thumb: '/img/projects/epg/01_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+      {
+        src: '/img/projects/epg/02.jpg',
+        thumb: '/img/projects/epg/02_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+       {
+        src: '/img/projects/epg/03.jpg',
+        thumb: '/img/projects/epg/03_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+      {
+       src: '/img/projects/epg/04.jpg',
+        thumb: '/img/projects/epg/04_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+       {
+        src: '/img/projects/epg/05.jpg',
+        thumb: '/img/projects/epg/05_small.jpg',
+        alt: 'E-commerce homepage featuring product grid'
+      },
+    ],
+    skills: ['Gestion de projet', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX'],
     technologies: ['Wordpress', 'Sass', 'Jquery', 'PHP', 'MySQL', 'Git', 'Figma', 'Wordpress Bedrock'],
     github: 'https://github.com/username/ecommerce'
   },
