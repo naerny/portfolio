@@ -129,7 +129,7 @@ export default function ProjectDetails({ params }: { params: { projectId: string
         />
 
         {project.link && (
-          <Button href={project.link}>Voir le projet en ligne</Button>
+          <Button href={project.link} className='reveal-delay'>Voir le projet en ligne</Button>
         )}
 
       </div>
