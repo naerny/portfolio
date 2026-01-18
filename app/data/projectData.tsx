@@ -52,7 +52,8 @@ export const projects: Project[] = [
     ],
     skills: ['Data Visualization', 'UI Design', 'Graphic Design', 'Gestion de projet', 'Interaction design'],
     technologies: ['Vue.js', 'Figma', 'D3', 'Git', 'Suite Adobe'],
-    github: 'https://github.com/username/portfolio'
+    github: 'https://github.com/username/portfolio',
+    link: 'https://empire-annual-report.netlify.app/'
   },
   {
     id: 'coachlab',
@@ -90,7 +91,7 @@ Dans ce projet, j'ai coordonné l'équipe de développement et participé à la 
     ],
     skills: ['Gestion de projet', 'Coordination d’équipes', 'Suivi des délais et des livrables', 'Analyse des besoins utilisateurs', 'Pilotage de projets digitaux', 'Stratégie de communication', 'Création de contenu', 'Campagnes publicitaires', 'Recherche UX', 'UI/UX Design', 'Développement front-end'],
     technologies: ['Vue.js', 'Tailwind CSS', 'Figma', 'Suite Adobe', 'Git', 'Nuxt.js', 'Notion', 'Miro', 'Asana'],
-    github: 'https://github.com/username/ecommerce'
+    github: 'https://github.com/username/ecommerce',
   },
 
   {
@@ -165,7 +166,8 @@ Dans ce projet, j'ai coordonné l'équipe de développement et participé à la 
     ],
     skills: ['Gestion de projet', 'Coordination d’équipes', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Maintenance de site web', 'Optimisation des performances web'],
     technologies: ['Wordpress', 'Elementor', 'Docker', 'Machine virtuelle'],
-    github: 'https://github.com/username/ecommerce'
+    github: 'https://github.com/username/ecommerce',
+    link: 'https://baleinev.ch/'
   },
   {
     id: 'liris',
@@ -202,7 +204,8 @@ Dans ce projet, j'ai coordonné l'équipe de développement et participé à la 
     ],
     skills: ['Gestion de projet', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Relation Client'],
     technologies: ['Wordpress', 'Sass', 'Jquery', 'PHP', 'MySQL', 'Git', 'Figma', 'Wordpress Bedrock'],
-    github: 'https://github.com/username/ecommerce'
+    github: 'https://github.com/username/ecommerce',
+    link: 'https://liris.ch/fr/'
   },
   {
     id: 'ophtalmique',
@@ -238,7 +241,8 @@ Dans ce projet, j'ai coordonné l'équipe de développement et participé à la 
     ],
     skills: ['Gestion de projet', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX', 'Relation Client'],
     technologies: ['Wordpress', 'Sass', 'Jquery', 'PHP', 'MySQL', 'Git', 'Figma', 'Wordpress Bedrock'],
-    github: 'https://github.com/username/ecommerce'
+    github: 'https://github.com/username/ecommerce',
+    link: 'https://www.ophtalmique.ch/'
   },
   {
     id: 'forumepfl',
@@ -310,7 +314,8 @@ Dans ce projet, j'ai coordonné l'équipe de développement et participé à la 
     ],
     skills: ['Gestion de projet', 'Suivi des délais et des livrables', 'Développement front-end', 'Design UI/UX'],
     technologies: ['Wordpress', 'Sass', 'Jquery', 'PHP', 'MySQL', 'Git', 'Figma', 'Wordpress Bedrock'],
-    github: 'https://github.com/username/ecommerce'
+    github: 'https://github.com/username/ecommerce',
+    link: 'https://epg.ch/'
   },
 ];
 

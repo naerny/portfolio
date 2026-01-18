@@ -6,6 +6,7 @@ import Grid from '@/app/components/Grid'
 import TechStack from '@/app/components/TechStack'
 import SimpleGallery from '@/app/components/SimpleGallery'
 import Cta from '@/app/components/Cta'
+import Button from '@/app/components/Button';
 
 type GridImage = {
   url: string;
@@ -25,7 +26,7 @@ export default function ProjectDetails({ params }: { params: { projectId: string
     notFound()
   }
 
-   useEffect(() => {
+  useEffect(() => {
     // Dynamically import ScrollReveal only on client side
     import('scrollreveal').then((ScrollReveal) => {
       const sr = ScrollReveal.default({
@@ -40,7 +41,7 @@ export default function ProjectDetails({ params }: { params: { projectId: string
       // sr.reveal('.reveal-delay', { origin: 'left', delay: 400 });
       sr.reveal('.reveal-delay', { origin: 'bottom', delay: 2000 });
       sr.reveal('.reveal-left', { origin: 'left', delay: 500 });
-       sr.reveal('.reveal-left-delay', { origin: 'left', delay: 1500 });
+      sr.reveal('.reveal-left-delay', { origin: 'left', delay: 1500 });
     });
   }, []);
 
@@ -86,7 +87,8 @@ export default function ProjectDetails({ params }: { params: { projectId: string
         </div>
       </div>
 
-      <div className="w-full max-w-7xl">
+
+      <div className="w-full max-w-7xl flex flex-col justify-center items-center gap-6">
         {/* <Grid leftImages={gridImages.leftImages} rightImages={gridImages.rightImages} canHover={false} heights={{ leftTop: 'md:h-96', leftBottom: 'md:h-116', rightTop: 'md:h-72', rightBottom: 'md:h-140' }} /> */}
         <SimpleGallery
           galleryID="my-test-gallery"
@@ -125,7 +127,14 @@ export default function ProjectDetails({ params }: { params: { projectId: string
             },
           ]}
         />
+
+        {project.link && (
+          <Button href={project.link}>Voir le projet en ligne</Button>
+        )}
+
       </div>
+
+
 
       <TechStack technologies={project.technologies} skills={project.skills} />
 
