@@ -43,5 +43,14 @@ export const listData: ListItem[] = [
     location: "Lausanne, VD",
     period: "2018 - 2022",
     technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind']
+  },
+  {
+    type: 'work',
+    title: "Travail de Bachelor",
+    subtitle: "Product Manager (Digital Health / Services)",
+    company: "Unisanté",
+    location: "Lausanne, VD",
+    period: "2025 - 2025",
+    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind']
   }
 ];

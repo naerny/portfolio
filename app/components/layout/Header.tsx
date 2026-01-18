@@ -18,7 +18,7 @@ export default function Header() {
         <div className='flex gap-2'>
           <Link
             className="px-4 py-2 rounded-3xl font-medium bg-stone-200 text-(--foreground) hover:bg-stone-400 hover:rounded-lg hover:text-(--background) focus:ring-2 focus:ring-blue-300 transition-all hover:cursor-pointer hover:scale-105"
-            href="/cv_nicolas_aerny_2025.pdf"
+            href="/cv_nicolas_aerny.pdf"
             rel="noopener noreferrer"
             target="_blank"
           >

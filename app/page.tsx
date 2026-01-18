@@ -8,6 +8,7 @@ import Cta from "./components/Cta";
 import Other from "./components/Other";
 import ProjectList from "./components/ProjectList";
 import { projects } from './data/projectData'
+import PopUp from './components/PopUp';
 
 type GridImage = {
   url: string;
@@ -111,6 +112,7 @@ export default function Home() {
       // sr.reveal('.reveal-delay', { origin: 'left', delay: 400 });
       sr.reveal('.reveal-delay', { origin: 'bottom', delay: 2000 });
       sr.reveal('.reveal-left', { origin: 'left', delay: 500 });
+      sr.reveal('.reveal-right', { origin: 'top', duration: 1500, delay: 2000, distance: '150px', scale: 2 });
     });
   }, []);
 
@@ -139,17 +141,21 @@ export default function Home() {
         <h2 className="h2 reveal-left">Projets professionnels</h2>
         <Grid leftImages={profProjects.leftImages} rightImages={profProjects.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116' }} />
       </div>
-      <List />
+      
        <div className="w-full">
         <h2 className="h2 reveal-left">Projets académiques</h2>
         <ProjectList leftImages={academicProjects.leftImages} rightImages={academicProjects.rightImages} heights={{ leftTop: 'md:h-116', leftBottom: 'md:h-96', rightTop: 'md:h-96', rightBottom: 'md:h-116' }} />
       </div>
+
+      <List />
+      
       {/* <div className="w-full">
         <h2 className="h2 md:text-right">Ça fait quoi un ingénieur des médias?</h2>
         <App />
       </div> */}
       {/* <Other /> */}
       <Cta input={['nicolas.aerny', 'gmail.com']} />
+      <PopUp />
     </main>
 
   );

@@ -30,12 +30,12 @@ interface ProjectListProps {
 export default function ProjectList({ leftImages, rightImages, canHover = true, heights }: ProjectListProps) {
     return (
         <div>
-        <div className="gridImg__container flex flex-wrap gap-4 w-full">
+        <div className="gridImg__container flex flex-wrap gap-4 w-full md:mb-12 lg:md-4">
             <div className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-4">               
                 <GridImg image={leftImages[0]} className="h-64" />
-                <GridImg image={leftImages[1]} className="h-64" /> 
-                <GridImg image={rightImages[0]} className="h-64" /> 
-                <GridImg image={rightImages[1]} className="h-64" />               
+                <GridImg image={leftImages[1]} className="h-64 lg:h-68 md:translate-y-12 lg:translate-y-0" /> 
+                <GridImg image={rightImages[0]} className="h-64 lg:h-68" /> 
+                <GridImg image={rightImages[1]} className="h-64 md:translate-y-12 lg:translate-y-4" />               
             </div>            
         </div>
 
