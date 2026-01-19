@@ -21,7 +21,7 @@ export default function List() {
       <ul className="flex flex-col gap-4">
         {sortedListData.map((item, index) => (
           <li key={index} className="reveal flex flex-wrap border-b border-stone-300 pb-4 pt-2">
-            <div className="w-full flex md:flex-1 align-bottom">
+            <div className="w-full flex lg:flex-1 align-bottom">
               <p className="flex flex-col mt-auto">
                 <span className="mb-[-5px] text-stone-500">{item.title}</span>
                 <span className="h4">{item.subtitle}</span>
