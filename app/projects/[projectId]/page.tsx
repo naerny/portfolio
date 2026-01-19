@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import Link from 'next/link';
 import { getProject } from '@/app/data/projectData'
 import { notFound } from 'next/navigation'
 import Grid from '@/app/components/Grid'
@@ -7,6 +8,7 @@ import TechStack from '@/app/components/TechStack'
 import SimpleGallery from '@/app/components/SimpleGallery'
 import Cta from '@/app/components/Cta'
 import Button from '@/app/components/Button';
+import { div } from 'three/tsl';
 
 type GridImage = {
   url: string;
@@ -67,6 +69,8 @@ export default function ProjectDetails({ params }: { params: { projectId: string
   const galleryImages = [makeImage(0), makeImage(1), makeImage(2), makeImage(3)];
 
   return (
+    <div>
+       <Link href="/" className="reveal text-(--gray) hover:text-(--foreground)  transition-all">← <span className='underline hover:no-underline'>Retourner à l'accueil</span></Link>
     <article className="flex flex-col items-center gap-16 md:gap-32 md:py-24">
       <div className='w-full flex flex-col items-center gap-8'>
         <div className='self-start w-full md:max-w-[75%] lg:max-w-[50%]'>
@@ -141,5 +145,6 @@ export default function ProjectDetails({ params }: { params: { projectId: string
       <Cta input={['nicolas.aerny', 'gmail.com']} />
 
     </article>
+    </div>
   )
 }

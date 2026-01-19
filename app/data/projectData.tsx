@@ -92,6 +92,7 @@ Dans ce projet, j'ai coordonné l'équipe de développement et participé à la 
     skills: ['Gestion de projet', 'Coordination d’équipes', 'Suivi des délais et des livrables', 'Analyse des besoins utilisateurs', 'Pilotage de projets digitaux', 'Stratégie de communication', 'Création de contenu', 'Campagnes publicitaires', 'Recherche UX', 'UI/UX Design', 'Développement front-end'],
     technologies: ['Vue.js', 'Tailwind CSS', 'Figma', 'Suite Adobe', 'Git', 'Nuxt.js', 'Notion', 'Miro', 'Asana'],
     github: 'https://github.com/username/ecommerce',
+    link: 'https://coachlab-demo.netlify.app/'
   },
 
   {
