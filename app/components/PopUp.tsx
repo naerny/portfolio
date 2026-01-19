@@ -48,12 +48,14 @@ export default function PopUp() {
       <div className='border border-dashed border-(--gray) rounded-lg p-4 flex flex-col gap-2 justify-start items-start'>
         <h2 className="h2 mb-4">Bonjour! 👋</h2>
         {/* <p className="">Bienvenue sur mon portfolio! Ce site est construit sur ReactJs et évolue au file de mon apprentissage de cette technologie.</p> */}
-        <p>Ce site est développé en React.js et évolue en même temps que mes compétences.</p>
-        <p>C'est un terrain d’expérimentation pour approfondir cette technologie, tester des idées, améliorer les performances et affiner l’expérience utilisateur au fil du temps.</p>
+        <p>Ce portfolio est développé avec Next.js et me sert de terrain d’expérimentation maîtrisé.</p>
+        <p>Il évolue au fil de mon approfondissement de la technologie, avec l’objectif constant d’améliorer la qualité du code, les performances et l’expérience utilisateur.</p>
+        {/* <p>Ce site est développé en React.js et évolue en même temps que mes compétences.</p>
+        <p>C'est un terrain d’expérimentation pour approfondir cette technologie, tester des idées, améliorer les performances et affiner l’expérience utilisateur au fil du temps.</p> */}
         <p>Bonne visite!</p>
         {/* <CtaBtn mailParts={input} /> */}
         <Button variant="primary" className="mt-4" onClick={handleClose}>
-          Compris!
+          J'ai compris!
         </Button>
       </div>
 
